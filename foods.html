@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+    #sticky{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #11901f !important;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    [class*="col-"] {
+    width: 100%;
+    }
+    @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    }
+    .header{
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-shadow: 0 0 3px #FF0000;
+    }
+    .menu li{
+        background-color:#2980B9;
+        margin-bottom: 8px;
+        color: bisque;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    .menu ul{
+        list-style: none;
+    }
+    .footer{
+        text-align: center;
+        color: green;
+        text-transform: capitalize;
+    }
+    .side{
+        float: left;
+        background-color: #11998e;
+        text-align: left;
+        padding-top: 10px;
+    }
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+    }
+    
+
+
+</style>
+
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success" id="sticky">
+        <div class="container">
+            <a 
+            href="index.html"
+            class="navbar-brand mb-0 h1">
+            <img 
+            class="d-inline-block align-top"
+            src="img/davaolifelogo.png" width="200" height="80">
+
+            </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarnav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarnav">
+                <ul class="navbar-nav">
+                    <li class="nav-item-active">
+                        <a href="#" class="nav-link active">
+                            Davao Life
+                        </a>
+                    </li>
+                    <li class="nav-item-active">
+                        <a href="#" class="nav-link active">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item-active">
+                        <a href="#" class="nav-link active">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>    
+
+    </nav>
+
+    <div class="header">
+        <h1>Restaurant</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li><a href="#" class="text-dark">Exotic</a></li>
+                <li><a href="#" class="text-dark">Night Market</a></li>
+                <li><a href="#" class="text-dark">Cafe</a></li>
+                <li><a href="#" class="text-dark">Entertainment</a></li>
+               
+            </ul>
+        </div>
+            <div class="col-6">
+                <p>Davao cuisine mainly composed of a wide array of seafood and locally grown produce. The city boasts of restaurants serving mouth-watering grilled seafood and other dishes that are just right for the budget.</p>
+                <br>
+                <h2 style="text-shadow: 2px 2px 5px blue;"> Crocodile Lechon, anyone?</h2>
+                <br>
+                <div id="carouselbutton" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/croco.jpg" class="mx-auto d-block" width="80%" height="vh">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/croco1.jpg" class="mx-auto d-block" width="80%" height="vh">
+                        </div>
+                        
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselbutton" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselbutton" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+                <!--<img src="img/croco.jpg" alt="crocs" width="80%" height="vh">-->
+                <br><br><br>
+                <p>The Davao Crocodile Park and Zoo aims to be the go-to destination for exotic food in Davao City, starting with their sustainably-farmed saltwater crocodile lechon - an instant hit for tourists and locals alike visiting the zoo.
+                 For first-timers eyeing to try the exotic lechon, the crocodile meat is like a mix of pork and chicken in terms of taste and texture. Considered as an aphrodisiac, the crocodiles’ white meat is very lean and low in calories with little to no fat.</p>
+                 <a href="https://www.facebook.com/davaocrocodileparkandzoo/" target="_blank">Read more</a>
+                
+
+    
+            </div>
+            <div class="col-3 side">
+                <h3>What?</h3>
+                <p>Lechon Crocs</p>
+                <h3>Where?</h3>
+                <p>Riverfront Corporate City, Diversion Road, Ma-a, Davao City, Philippines 0917 702 5953</p>
+                <h3>How Much?</h3>
+                <p>₱ 1,500/kilo</p>
+                <br><br><br>
+                <h4>Dial <span><b style="color: #FF0000;">911</b></span> in case of emergency</h4>
+            </div>
+            
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Restaurant</li>
+            </ul>
+        </div>
+        <div class="col-8">
+            <h2 style="text-shadow: 2px 2px 5px blue;"> Vista View Resto</h2>
+            <br><br>
+            <p>If you are traveling to Davao looking for dining destinations to try, consider adding Vista View Resto (or simply Vista View) to your list. The restaurant attracts customers – locals and city visitors alike – who want to experience delectable menu items and, at the same time, a place to relax and unwind.</p>
+            <br><br>
+            <img src="img/vistaview.jpg" alt="" width="100%">
+            <br><br>
+            <p>Located in Barangay Langub, Diversion Road, Maa, this unassuming resto is atop a hill, facing the cityscape of Davao, the Davao Gulf, and the Samal Island beyond. The restaurant’s location is just right to see, without obstructions, Davao City in its breathtaking vistas.</p>
+            <br><br>
+            <h4 style="text-shadow: 2px 2px 5px blue;"> The Best Time of the day to Get There</h4>
+            <br><br>
+            <img src="img/237069535_1913024855542289_2512819261330207510_n.jpg" alt="" width="100%">
+            <br>
+            <p>The best time (for me) to go there is during the late afternoon. The cityscape is more beautiful when the sun is hanging low. Around 5 PM, you have enough time to roam around, take some photographs, and enjoy the panoramic view of the city. And, after exploring the vicinity, you can expect that your food is ready to serve and enjoy your dinner (you can request a specific time that you want them to serve your food, by the way).</p>
+            <br><br>
+            <div id="carouselbutton" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/vistafood2.jpg" class="mx-auto d-block" width="80%" height="vh">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/vistafood3.jpg" class="mx-auto d-block" width="80%" height="vh">
+                    </div>
+                    
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselbutton" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselbutton" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+
+
+        </div>
+        
+    </div>
+    <br><br> <br><br>
+    <div class="row">
+        <div class="col-3 menu">
+           
+        </div>
+        <div class="col-8">
+            <h2 style="text-shadow: 2px 2px 5px blue;"> Roxas Night Market</h2>
+            <br>
+            <img src="img/Roxas Night Market1.jpg" alt="" width="100%">
+            <br><br>
+            <p>Roxas Night Market is not quite like the night markets like Manila’s Soderno and Mercato Centrale. It is more like Cebu’s Colon Night Market which can be described in the native dialect as “inato”. Roxas Night Market has no elaborate displays of food and goods. Instead, there are makeshift stalls and food carts, small tables and low stools and lots of items to choose from. Items used to be dirt cheap at the Roxas Night Market but inflation and the recent pandemic has lead to higher prices of food and merchandise for sale.
+            You will find and enjoy the following at the Roxas night Market.</p>
+                <br><br>
+            <img src="img/roxasnight2.jpg" alt="" width="100%">
+            <br>
+            <p>Roxas is a popular night market and a potential destination for many visitors to Davao City. It stretches about 1 km southeast of the famous Roxas Street. This lively market consists of several sections ranging from traditional food stalls, refreshing drinks, clothes, accessories, souvenirs and other items of interest. Cheap prices and good quality.</p>
+            <br>
+            <div id="carouselbutton" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/roxas night market.jpg" class="mx-auto d-block" width="100%" height="vh">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/roxasnightmarket2.jpg" class="mx-auto d-block" width="100%" height="vh">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/roxasnight.jpg" class="mx-auto d-block" width="100%" height="vh">
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselbutton" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselbutton" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="footer">
+        <footer>
+            <a href="index.html">
+                <img src="img/Logo-City-Govt.png" width="50%">
+            </a>
+            <br>
+            copyright 2023
+            <a href="index.html"><i class="fa-regular fa-circle-left fa-xl"></i></a>
+
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
